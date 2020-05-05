@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Inscripción</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboards/dashboardSecretaria.html">
+				<div class="">
+					<img src="img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Magali</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link current"
+							href="dashboards/dashboardSecretaria.html"
+						>
+							<i class="fas fa-home"></i>
+							<span class="hide-md">&nbsp; Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link current" href="busquedas.html">
+							<i class="fas fa-search"
+								><span class="hide-md">&nbsp; Búsqueda</span></i
+							>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cursos.html">
+							<i class="fas fa-chalkboard"></i
+							><span class="hide-md">&nbsp; Cursos</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inscripcion.html">
+							<i class="fas fa-user-edit"></i
+							><span class="hide-md">&nbsp; Inscripción</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="facturacion.html">
+							<i class="fas fa-hand-holding-usd"></i
+							><span class="hide-md">&nbsp; Facturación</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="caja.html">
+							<i class="fas fa-cash-register"></i
+							><span class="hide-md">&nbsp; Caja</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inicio/login.html">
+							<i class="fas fa-sign-out-alt"></i
+							><span class="hide-md"> &nbsp; Cerrar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<a href="dashboards/dashboardSecretaria.html" class="btn"
+				><i class="fas fa-chevron-left"></i> Volver</a
+			>
+			<div class="enrollment p-2 bg-white mt-1">
+				<h1 class="text-primary large text-dark p-1">Inscripción</h1>
+				<div class="add-item">
+					<a href="listados/listadoInscripcion.html" class="btn btn-light"
+						>Ver Listado</a
+					>
+				</div>
+				<form class="form">
+					<div class="form-group">
+						<h2 class="hijos-titulo text-primary">Alumno</h2>
+						<div class="hijo">
+							<!-- Alert -->
+							<div class="alert alert-danger">
+								No se encontró un alumno con esos datos
+							</div>
+							<div class="form-group">
+								<input type="number" name="legajo" placeholder="Legajo" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Nombre" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="lastname" placeholder="Apellido" />
+							</div>
+							<div class="add-item">
+								<button class="btn btn-secondary">
+									<i class="far fa-check-circle"></i>
+									<span class="hide-sm">Aceptar</span>
+								</button>
+								<button class="btn btn-secondary">
+									<i class="fas fa-ban"></i>
+									<span class="hide-sm">Cancelar</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<select>
+							<option value="0">* Seleccione Categoría</option>
+							<option value="Kinder">Kinder</option>
+							<option value="Infantil C">Infantil C</option>
+							<option value="Infantil B">Infantil B</option>
+							<option value="Infantil A">Infantil A</option>
+							<option value="Preparatorio">Preparatorio</option>
+							<option value="Junior">Junior</option>
+							<option value="1° Año">1° Año</option>
+							<option value="2° Año">2° Año</option>
+							<option value="3° Año">3° Año</option>
+							<option value="4° Año">4° Año</option>
+							<option value="5° Año">5° Año</option>
+							<option value="6° Año">6° Año</option>
+							<option value="CAE">CAE</option>
+							<option value="Proficency">Proficency</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select>
+							<option value="0">* Seleccione el Año al que se Inscribe</option>
+							<option value="2020">2020</option>
+							<option value="20221">2021</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<input type="text" class="text-right" value="$2000" disabled />
+						<small class="form-text text-right">Importe</small>
+					</div>
+
+					<div class="add-item mb-2">
+						<input type="submit" value="Inscribir" class="btn btn-primary" />
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

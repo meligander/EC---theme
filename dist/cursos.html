@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cursos</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboards/dashboardSecretaria.html">
+				<div class="">
+					<img src="img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Magali</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link current"
+							href="dashboards/dashboardSecretaria.html"
+						>
+							<i class="fas fa-home"></i>
+							<span class="hide-md">&nbsp; Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link current" href="busquedas.html">
+							<i class="fas fa-search"
+								><span class="hide-md">&nbsp; Búsqueda</span></i
+							>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cursos.html">
+							<i class="fas fa-chalkboard"></i
+							><span class="hide-md">&nbsp; Cursos</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inscripcion.html">
+							<i class="fas fa-user-edit"></i
+							><span class="hide-md">&nbsp; Inscripción</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="facturacion.html">
+							<i class="fas fa-hand-holding-usd"></i
+							><span class="hide-md">&nbsp; Facturación</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="caja.html">
+							<i class="fas fa-cash-register"></i
+							><span class="hide-md">&nbsp; Caja</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inicio/login.html">
+							<i class="fas fa-sign-out-alt"></i
+							><span class="hide-md"> &nbsp; Cerrar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<div class="profile-class p-2 bg-white">
+				<h1 class="text-primary large text-dark p-1">Cursos</h1>
+
+				<div class="form filter">
+					<h2 class="lead text-primary">Filtros</h2>
+					<div class="form-group">
+						<select>
+							<option value="0">* Seleccione Profesor</option>
+							<option value="Lilia Anderlini">Lilia Anderlini</option>
+							<option value="Karina del Valle">Karina del Valle</option>
+							<option value="Claudia Lucero">Claudia Lucero</option>
+							<option value="Emiliano Funes">Emiliano Funes</option>
+							<option value="Mauricio Bolaño">Mauricio Bolaño</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select>
+							<option value="0">* Seleccione Categoría</option>
+							<option value="Kinder">Kinder</option>
+							<option value="Infantil C">Infantil C</option>
+							<option value="Infantil B">Infantil B</option>
+							<option value="Infantil A">Infantil A</option>
+							<option value="Preparatorio">Preparatorio</option>
+							<option value="Junior">Junior</option>
+							<option value="1° Año">1° Año</option>
+							<option value="2° Año">2° Año</option>
+							<option value="3° Año">3° Año</option>
+							<option value="4° Año">4° Año</option>
+							<option value="5° Año">5° Año</option>
+							<option value="6° Año">6° Año</option>
+							<option value="CAE">CAE</option>
+							<option value="Proficency">Proficency</option>
+						</select>
+					</div>
+					<input type="submit" value="Actualizar" class="btn btn-primary" />
+				</div>
+
+				<table>
+					<tr>
+						<th>Profesor</th>
+						<th>Categoría</th>
+						<th>Aula</th>
+						<th>Día 1</th>
+						<th>Comienzo</th>
+						<th>Fin</th>
+						<th>Día 2</th>
+						<th>Comienzo</th>
+						<th>Fin</th>
+						<th>&nbsp;</th>
+					</tr>
+					<tr>
+						<td>Karina</td>
+						<td>2° Año</td>
+						<td>3</td>
+						<td>Lunes</td>
+						<td>3:30</td>
+						<td>5:00</td>
+						<td>Miércoles</td>
+						<td>3:30</td>
+						<td>5:00</td>
+						<td><a href="curso.html" class="btn btn-light">Ver</a></td>
+					</tr>
+					<tr>
+						<td>Claudia</td>
+						<td>Junior</td>
+						<td>3</td>
+						<td>Martes</td>
+						<td>4:30</td>
+						<td>6:00</td>
+						<td>Jueves</td>
+						<td>4:30</td>
+						<td>6:00</td>
+						<td><a href="curso.html" class="btn btn-light">Ver</a></td>
+					</tr>
+					<tr>
+						<td>Lilia</td>
+						<td>5° Año</td>
+						<td>1</td>
+						<td>Martes</td>
+						<td>7:30</td>
+						<td>9:30</td>
+						<td>Jueves</td>
+						<td>7:30</td>
+						<td>9:30</td>
+						<td><a href="curso.html" class="btn btn-light">Ver</a></td>
+					</tr>
+					<tr>
+						<td>Mauricio</td>
+						<td>4° Año</td>
+						<td>2</td>
+						<td>Lunes</td>
+						<td>5:30</td>
+						<td>7:30</td>
+						<td>Miércoles</td>
+						<td>5:30</td>
+						<td>7:30</td>
+						<td><a href="curso.html" class="btn btn-light">Ver</a></td>
+					</tr>
+					<tr>
+						<td>Karina</td>
+						<td>1° Año</td>
+						<td>4</td>
+						<td>Lunes</td>
+						<td>5:30</td>
+						<td>7:00</td>
+						<td>Miércoles</td>
+						<td>5:30</td>
+						<td>7:00</td>
+						<td><a href="curso.html" class="btn btn-light">Ver</a></td>
+					</tr>
+				</table>
+				<div class="add-item">
+					<a href="crearCurso.html" class="btn btn-primary">
+						<i class="fas fa-plus"></i> Crear Curso
+					</a>
+					<button class="btn btn-secondary">
+						<i class="far fa-save"></i>
+					</button>
+					<button class="btn btn-secondary">
+						<i class="fas fa-print"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

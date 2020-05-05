@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Búsqueda de usuarios</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboards/dashboardSecretaria.html">
+				<div class="">
+					<img src="img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Claudia</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link current"
+							href="dashboards/dashboardProfesor.html"
+						>
+							<i class="fas fa-home"></i>
+							<span class="hide-md">&nbsp; Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cursosProfesor.html">
+							<i class="fas fa-chalkboard-teacher"></i
+							><span class="hide-md"> &nbsp; Cursos</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="busquedas.html">
+							<i class="fas fa-search"></i
+							><span class="hide-md"> &nbsp; Búsqueda</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inicio/login.html">
+							<i class="fas fa-sign-out-alt"></i
+							><span class="hide-md"> &nbsp; Cerrar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<!-- Solo cuando ve otros perfiles -->
+			<a href="dashboards/dashboardSecretaria.html" class="btn"
+				><i class="fas fa-chevron-left"></i> Volver</a
+			>
+			<div class="search p-4 bg-white m-1">
+				<h1 class="x-large text-dark p-1 text">
+					<i class="fas fa-search"></i> Búsqueda
+				</h1>
+				<div class="add-item my-2">
+					<a href="register.html" class="btn btn-success">
+						<i class="fas fa-user-plus"></i>
+						<span class="hide-sm">Registrar Usuario</span>
+					</a>
+				</div>
+				<section class="ai-content__main">
+					<div class="ai-content__content">
+						<div class="ai-tabs">
+							<nav class="ai-tabs__tab-header">
+								<ul>
+									<li>
+										<a href="#one" class="ai-tabs__link ai-tabs--active"
+											>Alumnos</a
+										>
+									</li>
+									<li>
+										<a href="#two" class="ai-tabs__link">Padres</a>
+									</li>
+									<li>
+										<a href="#three" class="ai-tabs__link">Profesores</a>
+									</li>
+									<li>
+										<a href="#four" class="ai-tabs__link"
+											><span class="hide-sm">Secretarias y </span>Admin</a
+										>
+									</li>
+								</ul>
+								<div class="ai-tabs__line-container">
+									<div class="ai-tabs__line"></div>
+								</div>
+							</nav>
+							<div class="ai-tabs__content-container">
+								<div class="ai-tabs__content mt-2" id="one">
+									<form class="form filter">
+										<h2 class="lead text-primary mt-1">Filtros</h2>
+										<div class="form-group">
+											<input type="number" name="" placeholder="Legajo" id="" />
+										</div>
+										<div class="form-group">
+											<input type="text" name="" placeholder="Nombre" id="" />
+										</div>
+										<div class="form-group">
+											<input type="text" name="" placeholder="Apellido" id="" />
+										</div>
+										<div class="form-group">
+											<select>
+												<option value="0">* Seleccione Categoría</option>
+												<option value="Kinder">Kinder</option>
+												<option value="Infantil C">Infantil C</option>
+												<option value="Infantil B">Infantil B</option>
+												<option value="Infantil A">Infantil A</option>
+												<option value="Preparatorio">Preparatorio</option>
+												<option value="Junior">Junior</option>
+												<option value="1° Año">1° Año</option>
+												<option value="2° Año">2° Año</option>
+												<option value="3° Año">3° Año</option>
+												<option value="4° Año">4° Año</option>
+												<option value="5° Año">5° Año</option>
+												<option value="6° Año">6° Año</option>
+												<option value="CAE">CAE</option>
+												<option value="Proficency">Proficency</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<input type="checkbox" checked name="cb" id="cb1" />
+											<label id="check" for="cb1">Activos</label>
+										</div>
+										<div class="add-item mb-1">
+											<button type="submit" class="btn btn-light">
+												<i class="fas fa-filter"></i> Buscar
+											</button>
+										</div>
+									</form>
+
+									<table>
+										<tr>
+											<th>Nombre</th>
+											<th>Legajo</th>
+											<th>Edad</th>
+											<th>Celular</th>
+											<th>Categoría</th>
+											<th>&nbsp;</th>
+										</tr>
+										<tr>
+											<td>Sofía Cuello</td>
+											<td>127</td>
+											<td>11</td>
+											<td>(2664) 87-9470</td>
+											<td>2° Año</td>
+											<td>
+												<a
+													href="dashboards/dashboardAlumno.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Benjamín Fernandez</td>
+											<td>264</td>
+											<td>13</td>
+											<td>(2664) 87-9470</td>
+											<td>3° Año</td>
+											<td>
+												<a
+													href="dashboards/dashboardAlumno.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Julián Gonzalez</td>
+											<td>130</td>
+											<td>8</td>
+											<td>(2664) 87-9470</td>
+											<td>Infantil A</td>
+											<td>
+												<a
+													href="dashboards/dashboardAlumno.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Estefanía Lopez</td>
+											<td>111</td>
+											<td>15</td>
+											<td>(2664) 87-9470</td>
+											<td>5° Año</td>
+											<td>
+												<a
+													href="dashboards/dashboardAlumno.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Milagros Gutierrez</td>
+											<td>102</td>
+											<td>11</td>
+											<td>(2664) 87-9470</td>
+											<td>Preparatorio</td>
+											<td>
+												<a
+													href="dashboards/dashboardAlumno.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="ai-tabs__content mt-2" id="two">
+									<form class="form filter">
+										<h2 class="lead text-primary mt-1">Filtros</h2>
+										<div class="form-group">
+											<input type="text" name="" placeholder="Nombre" id="" />
+										</div>
+										<div class="form-group">
+											<input type="text" name="" placeholder="Apellido" id="" />
+										</div>
+										<div class="form-group">
+											<input
+												type="text"
+												name=""
+												placeholder="Nombre Alumno"
+												id=""
+											/>
+										</div>
+										<div class="form-group">
+											<input
+												type="text"
+												name=""
+												placeholder="Apellido Alumno"
+												id=""
+											/>
+										</div>
+
+										<div class="form-group">
+											<input type="checkbox" checked name="cb" id="cb1" />
+											<label id="check" for="cb1">Activos</label>
+										</div>
+										<div class="add-item mb-1">
+											<button type="submit" class="btn btn-light">
+												<i class="fas fa-filter"></i> Buscar
+											</button>
+										</div>
+									</form>
+
+									<table class="small">
+										<tr>
+											<th>Nombre</th>
+											<th>Email</th>
+											<th>Celular</th>
+											<th>Nombre Alumno</th>
+											<th>&nbsp;</th>
+										</tr>
+										<tr>
+											<td>Andrea Gutierrez</td>
+											<td>agutierrez@gmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>Sofía Cuello</td>
+											<td>
+												<a
+													href="dashboards/dashboardTutor.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Juan Carlos Fernandez</td>
+											<td>juancafer@hotmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>Benjamín Fernandez</td>
+											<td>
+												<a
+													href="dashboards/dashboardTutor.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Cristina Colombo</td>
+											<td>cristial100@hotmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>Julián Gonzalez</td>
+											<td>
+												<a
+													href="dashboards/dashboardTutor.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Ramón López</td>
+											<td>laacaderamon@hotmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>Estefanía López</td>
+											<td>
+												<a
+													href="dashboards/dashboardTutor.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>José Ignacio Gutierrez</td>
+											<td>josigutierrez@gmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>Milagros Gutierrez</td>
+											<td>
+												<a
+													href="dashboards/dashboardTutor.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="ai-tabs__content mt-2" id="three">
+									<form class="form filter">
+										<h2 class="lead text-primary mt-1">Filtros</h2>
+										<div class="form-group">
+											<input type="text" name="" placeholder="Nombre" id="" />
+										</div>
+										<div class="form-group">
+											<input type="text" name="" placeholder="Apellido" id="" />
+										</div>
+										<div class="form-group">
+											<input type="checkbox" checked name="cb" id="cb1" />
+											<label id="check" for="cb1">Activos</label>
+										</div>
+										<div class="add-item mb-1">
+											<button type="submit" class="btn btn-light">
+												<i class="fas fa-filter"></i> Buscar
+											</button>
+										</div>
+									</form>
+
+									<table class="small">
+										<tr>
+											<th>Nombre</th>
+											<th>Email</th>
+											<th>Celular</th>
+											<th>Fecha Nacimiento</th>
+											<th>&nbsp;</th>
+										</tr>
+										<tr>
+											<td>Claudia Lucero</td>
+											<td>claulucero@gmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>11/04/78</td>
+											<td>
+												<a
+													href="dashboards/dashboardProfesor.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Karina del Valle</td>
+											<td>karinafrangino@gmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>13/08/74</td>
+											<td>
+												<a
+													href="dashboards/dashboardProfesor.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Emiliano Funes</td>
+											<td>emifunesdanza@hotmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>08/03/93</td>
+											<td>
+												<a
+													href="dashboards/dashboardProfesor.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Mauricio Bolaño</td>
+											<td>mbolano@gmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>30/03/95</td>
+											<td>
+												<a
+													href="dashboards/dashboardProfesor.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="ai-tabs__content mt-2" id="four">
+									<form class="form filter">
+										<h2 class="lead text-primary mt-1">Filtros</h2>
+										<div class="form-group">
+											<input type="text" name="" placeholder="Nombre" id="" />
+										</div>
+										<div class="form-group">
+											<input type="text" name="" placeholder="Apellido" id="" />
+										</div>
+										<div class="form-group">
+											<input type="checkbox" checked name="cb" id="cb1" />
+											<label id="check" for="cb1">Activos</label>
+										</div>
+										<div class="add-item mb-1">
+											<button type="submit" class="btn btn-light">
+												<i class="fas fa-filter"></i> Buscar
+											</button>
+										</div>
+									</form>
+
+									<table class="small">
+										<tr>
+											<th>Nombre</th>
+											<th>Email</th>
+											<th>Celular</th>
+											<th>Fecha Nacimiento</th>
+											<th>Rol</th>
+											<th>&nbsp;</th>
+										</tr>
+										<tr>
+											<td>Lilia Cristina Anderlini</td>
+											<td>lilianderlini@gmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>11/04/78</td>
+											<td>Administrador</td>
+											<td>
+												<a
+													href="dashboards/dashboardSecretaria.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Magali Gonzalez</td>
+											<td>maguigonzalez@gmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>13/08/94</td>
+											<td>Secretaria</td>
+											<td>
+												<a
+													href="dashboards/dashboardSecretaria.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td>Melina García Anderlini</td>
+											<td>meliganderlini@gmail.com</td>
+											<td>(2664) 87-9470</td>
+											<td>23/10/91</td>
+											<td>Administrador</td>
+											<td>
+												<a
+													href="dashboards/dashboardSecretaria.html"
+													class="btn btn-light"
+													>Ver</a
+												>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+		<script src="js/tabs.js"></script>
+	</body>
+</html>

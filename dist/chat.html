@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Posteos</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboards/dashboardAlumno.html">
+				<div class="">
+					<img src="img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Sofía</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a class="nav-link current" href="dashboardAlumno.html">
+							<i class="fas fa-home"></i>
+							<span class="hide-md">&nbsp; Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="chat.html">
+							<i class="far fa-comments"></i>
+							<span class="hide-md">&nbsp; Posteo Grupal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../contactosAlumnos.html">
+							<i class="fas fa-address-book"></i
+							><span class="hide-md"> &nbsp; Compañeros</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inicio/login.html">
+							<i class="fas fa-sign-out-alt"></i
+							><span class="hide-md"> &nbsp; Cerrar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<a href="dashboards/dashboardAlumno.html" class="btn"
+				><i class="fas fa-chevron-left"></i> Volver</a
+			>
+			<div class="chat p-2 bg-white mt-1">
+				<h1 class="large text-primary my-2">Posteos Grupales</h1>
+				<p class="lead">
+					<i class="far fa-comments"></i> Bienvenido al chat de 2° Año
+				</p>
+				<div class="post-form">
+					<div class="post-form-header bg-primary my-1">
+						<h3>Realiza un comentario para que lo vea la clase</h3>
+					</div>
+					<form class="form">
+						<textarea cols="30" rows="4" placeholder="Di algo..."></textarea>
+						<div class="add-item mt-1">
+							<input type="submit" class="btn btn-dark" value="Enviar" />
+						</div>
+					</form>
+				</div>
+				<div class="posts">
+					<div class="post bg-secondary-2 my-1 p-1">
+						<div>
+							<a href="dashboards/dashboardAlumno.html">
+								<img
+									class="round-img p-1"
+									src="img/uploads/teenage1.jpg"
+									alt=""
+								/>
+								<h4 class="text-dark lead">Sofia Cuello</h4>
+							</a>
+						</div>
+						<div>
+							<p class="my-1">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Quisquam provident sunt quia tempore non expedita repellendus
+								quaerat blanditiis aut, quam exercitationem corporis! Possimus
+								nisi ad maiores? Voluptates obcaecati recusandae quos.
+							</p>
+							<button class="btn btn-secondary-2">
+								<i class="fas fa-thumbs-up"></i
+								><span class="badge badge-secondary">4</span>
+							</button>
+							<button class="btn btn-secondary-2">
+								<i class="fas fa-thumbs-down"></i
+								><span class="badge badge-secondary">3</span>
+							</button>
+							<a href="post.html" class="btn btn-light"
+								>Comentarios <span class="badge badge-primary">5</span></a
+							>
+						</div>
+					</div>
+					<div class="post bg-secondary-2 my-1 p-1">
+						<div>
+							<a href="dashboards/dashboardAlumno.html">
+								<img
+									class="round-img p-1"
+									src="img/uploads/teenage2.jpg"
+									alt=""
+								/>
+								<h4 class="text-dark lead">Benjamin Fernandez</h4>
+							</a>
+						</div>
+						<div>
+							<p class="my-1">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Quisquam provident sunt quia tempore non expedita repellendus
+								quaerat blanditiis aut, quam exercitationem corporis! Possimus
+								nisi ad maiores? Voluptates obcaecati recusandae quos.
+							</p>
+							<button class="btn btn-secondary-2">
+								<i class="fas fa-thumbs-up"></i
+								><span class="badge badge-secondary">4</span>
+							</button>
+							<button class="btn btn-secondary-2">
+								<i class="fas fa-thumbs-down"></i
+								><span class="badge badge-secondary">3</span>
+							</button>
+							<a href="post.html" class="btn btn-light"
+								>Comentarios <span class="badge badge-primary">5</span></a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,643 @@
+//Widesceens
+@include mediaXL {
+}
+
+//Desktops and Laptops
+@include mediaLg {
+	.landing {
+		background-size: cover;
+		h1 {
+			line-height: 4rem;
+		}
+	}
+
+	.slider {
+		height: 500px;
+		img {
+			top: -50px;
+			background-size: cover;
+
+			&.img2 {
+				top: 0px;
+			}
+			&.img3 {
+				top: -70px;
+			}
+			&.img4 {
+				top: -150px;
+			}
+		}
+	}
+	#about-us {
+		.large {
+			font-size: 3rem;
+			line-height: 4rem !important;
+		}
+	}
+}
+
+//Widesceens & Small Laptops
+@include mediaMd {
+	.hide-md {
+		display: none;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+
+	.small-screen {
+		min-height: 87vh;
+	}
+
+	ul.menu-nav,
+	div.menu-branding {
+		float: none;
+		width: 100%;
+		min-height: 0;
+
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	.menu-nav {
+		height: 20vh;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	.menu-branding {
+		height: 80vh;
+		transform: translate3d(100%, 0, 0);
+		padding: 1rem;
+
+		.portrait {
+			background: url(../img/logoSinFondo2.png) no-repeat;
+			width: 500px;
+			height: 500px;
+			background-size: contain;
+		}
+	}
+
+	.landing {
+		background-position: center;
+		background-size: cover;
+		.main-text {
+			.x-large {
+				font-size: 3.5rem;
+				line-height: 4rem;
+			}
+			.lead {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	.slider {
+		height: 450px;
+		img {
+			top: -20px;
+			background-size: cover;
+
+			&.img2 {
+				top: 0px;
+			}
+			&.img3 {
+				top: -30px;
+			}
+			&.img4 {
+				top: -60px;
+			}
+		}
+	}
+
+	#about-us {
+		height: 500px;
+		.overlay {
+			height: inherit;
+		}
+		.container {
+			height: inherit;
+			.main {
+				margin-top: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				h2 {
+					font-size: 3.5rem;
+					line-height: 4rem;
+				}
+				p {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	#history .container .row .img-left {
+		img {
+			width: 300px;
+			margin: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	#cambridge .container .row {
+		img {
+			width: 250px;
+			margin: 1rem;
+			margin-bottom: 0;
+		}
+	}
+
+	#canada .container .row .img-slider {
+		img {
+			width: 300px;
+			margin: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	#contact .container .row {
+		flex-direction: column;
+	}
+
+	.container.login {
+		.bg-white {
+			.form {
+				margin: 1rem;
+				width: 100%;
+			}
+		}
+	}
+
+	table {
+		margin: auto;
+		position: relative;
+		border-collapse: collapse;
+		overflow-x: auto;
+		display: block;
+		width: fit-content;
+		max-width: 100%;
+
+		th {
+			width: 40px !important;
+		}
+	}
+
+	td:first-of-type,
+	th:first-of-type {
+		border-left: none;
+	}
+
+	td:last-of-type,
+	th:last-of-type {
+		border-right: none;
+	}
+
+	.teacher {
+		.profile-top {
+			flex-direction: column;
+			.img-about {
+				width: 100% !important;
+				img {
+					width: 250px !important;
+					height: 250px !important;
+				}
+			}
+			.about {
+				margin-top: 2rem;
+				padding: 0 !important;
+				width: 100% !important;
+				span.text-dark {
+					font-size: 1.1rem;
+				}
+				.lead {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	.register-user {
+		padding: 2rem 1.5rem !important;
+	}
+
+	.expence-list {
+		.form {
+			width: 90%;
+
+			select {
+				width: 70%;
+				margin: auto;
+			}
+		}
+	}
+
+	.register {
+		table {
+			width: 80%;
+			.lead {
+				font-size: 1.4rem;
+			}
+		}
+		.form {
+			width: 80%;
+		}
+	}
+
+	.enrollment-list {
+		form {
+			width: 90%;
+		}
+		table {
+			margin: 2rem auto !important;
+		}
+	}
+
+	.neighbourhood,
+	.type-expences,
+	.edit-grades {
+		h1 {
+			line-height: 4rem;
+			font-size: 3rem;
+		}
+		table {
+			display: table !important;
+			margin: 2rem auto !important;
+			width: 80%;
+		}
+	}
+}
+
+//Smartphones
+@include mediaSm {
+	.hide-sm,
+	.hide-md {
+		display: none;
+	}
+
+	.bg-white {
+		padding: 1.5rem 1.2rem !important;
+	}
+
+	.container {
+		padding: 0 0.5rem;
+	}
+
+	.menu-branding .portrait {
+		width: 300px;
+		height: 300px;
+	}
+
+	.menu-nav {
+		height: 20vh;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	.slider {
+		height: 250px;
+		img {
+			top: -5px;
+			background-size: cover;
+
+			&.img2 {
+				top: 0px;
+			}
+			&.img3 {
+				top: -30px;
+			}
+			&.img4 {
+				top: -60px;
+			}
+		}
+	}
+
+	#about-us {
+		height: 500px;
+		.overlay {
+			height: 500px;
+		}
+		.container {
+			.main {
+				margin-top: 4.5rem;
+				h2 {
+					font-size: 2.5rem;
+				}
+				p {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+
+	#history {
+		.container .row {
+			flex-direction: column;
+			.img-left img {
+				width: 200px;
+				margin: 0.5rem;
+			}
+
+			.text-right {
+				margin: 0;
+				padding: 0.5rem;
+			}
+		}
+	}
+
+	#cambridge {
+		.container {
+			.row {
+				flex-direction: column;
+				padding: 3rem;
+				img {
+					order: 2;
+				}
+
+				.text-right {
+					order: 1;
+					p {
+						padding: 0 1rem;
+					}
+				}
+			}
+		}
+	}
+
+	#canada {
+		.container {
+			margin-top: 2rem;
+			.row {
+				flex-direction: column;
+			}
+
+			.text-left {
+				margin-right: 0;
+			}
+			.img-slider {
+				margin: 2rem 1rem 1rem 1rem;
+
+				img {
+					width: 300px;
+					border: 2px $light-color solid;
+				}
+			}
+		}
+	}
+
+	#team {
+		.container {
+			.row {
+				padding: 1rem;
+				flex-direction: column;
+
+				h1 {
+					text-align: center;
+					font-size: 2.5rem;
+				}
+				.buttons {
+					margin: 1rem 0 !important;
+					h2 {
+						font-size: 2.5rem;
+						margin: 0 2rem;
+					}
+				}
+
+				.team {
+					width: 100%;
+					img {
+						width: 300px;
+					}
+				}
+			}
+		}
+	}
+
+	#contact {
+		h1 {
+			font-size: 3rem;
+			margin: 4rem 0 0 0;
+		}
+		.container .row {
+			.info {
+				margin: 1rem;
+				padding: 1rem;
+				&.lead {
+					font-size: 1.2rem;
+				}
+			}
+
+			iframe {
+				width: 330px;
+				height: 300px;
+			}
+		}
+	}
+
+	.container.login {
+		margin: 4rem 0.2rem 1.5rem 0.2rem;
+
+		.bg-white {
+			padding: 2rem 1rem !important;
+
+			.form {
+				margin: 1rem 0;
+				width: 100%;
+			}
+		}
+	}
+
+	.profile-grid {
+		.profile-top {
+			flex-direction: column;
+			.img-about {
+				width: 100% !important;
+				img {
+					width: 250px !important;
+					height: 250px !important;
+				}
+			}
+			.about {
+				padding: 0 !important;
+				width: 100% !important;
+				span.text-dark {
+					font-size: 1.1rem;
+				}
+				.lead {
+					font-size: 1rem;
+				}
+			}
+		}
+
+		.tutor {
+			display: inline-grid;
+			text-align: center;
+		}
+
+		.class-info {
+			flex-direction: column;
+			.title {
+				width: 100%;
+			}
+			.description {
+				width: 100%;
+			}
+		}
+	}
+
+	.class {
+		h1.attendance {
+			font-size: 3.5rem;
+		}
+		.info-class {
+			text-align: center;
+			margin: 1rem !important;
+
+			.days {
+				flex-direction: column;
+				margin-top: 1rem;
+				.day {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+		a.ai-tabs__link.grades {
+			font-size: 0.9rem;
+			padding: 0.7rem !important;
+		}
+	}
+
+	.chat .post {
+		grid-template-columns: 1fr;
+		grid-gap: 0.1rem;
+
+		a,
+		button {
+			padding: 0.3rem 0.4rem;
+		}
+	}
+
+	.search {
+		margin: 1rem 0 0 0 !important;
+		h1 {
+			font-size: 3rem;
+		}
+
+		.add-item {
+			margin: 0.5rem !important;
+		}
+
+		.filter {
+			width: 100%;
+		}
+
+		a.ai-tabs__link {
+			padding: 0.8rem !important;
+		}
+	}
+
+	.payment {
+		.form {
+			width: 100%;
+		}
+		a.ai-tabs__link {
+			padding: 1rem !important;
+		}
+
+		.invoice-details {
+			input {
+				width: 40%;
+			}
+			label {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	.register-user,
+	.enrollment {
+		.form {
+			width: 100%;
+		}
+	}
+
+	.register {
+		table {
+			width: 100%;
+			th {
+				font-size: 1rem;
+			}
+		}
+		.form {
+			width: 100% !important;
+			p {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	//Lists
+	.income-list,
+	.enrollment-list {
+		.form {
+			width: 100%;
+			.filter-info {
+				display: block;
+				width: 100%;
+				height: auto;
+
+				input[type='date'] {
+					margin: auto;
+				}
+				small.date {
+					text-align: center;
+				}
+
+				select {
+					width: 100%;
+				}
+			}
+
+			input[type='text'] {
+				width: 100%;
+				text-align: left;
+			}
+
+			.add-item {
+				margin: 0 0 4rem 0 !important;
+			}
+		}
+	}
+
+	.expence-list {
+		.form {
+			width: 100%;
+			.filter-info {
+				display: block;
+				height: auto;
+				input {
+					margin: auto;
+				}
+				small {
+					text-align: center;
+				}
+			}
+
+			select {
+				width: 100%;
+			}
+			.add-item {
+				margin: 0 0 3rem 0 !important;
+			}
+		}
+	}
+
+	.neighbourhood {
+		table {
+			display: table;
+			margin: 2rem auto !important;
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,490 @@
+//Container
+.container {
+	//max-width: $max-width;
+	//min-height: 95vh;
+	margin: 4rem auto 2rem auto;
+	overflow: hidden;
+	padding: 1rem 2rem;
+
+	.row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.round-img {
+	border-radius: 50%;
+}
+
+//Footer
+footer {
+	opacity: 0.9;
+	padding: 0.6rem;
+}
+
+//Text Styles
+.x-large {
+	font-size: 4rem;
+	line-height: 2.7rem;
+	margin-bottom: 1rem;
+}
+.large {
+	font-size: 3rem;
+	line-height: 2.5rem;
+	margin-bottom: 1rem;
+}
+.lead {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.text-primary {
+	color: $primary-color;
+}
+.text-primary-2 {
+	color: lighten($primary-color, 30%);
+}
+.text-secondary {
+	color: $secondary-color;
+}
+.text-dark {
+	color: $dark-color;
+}
+.text-light {
+	color: $light-color;
+}
+
+//Backgrounds
+.bg {
+	&-primary {
+		@include set-background($primary-color);
+	}
+	&-secondary {
+		@include set-background($secondary-color);
+	}
+	&-secondary-2 {
+		@include set-background(lighten($secondary-color, 15%));
+	}
+	&-light {
+		@include set-background($light-color);
+	}
+	&-dark {
+		@include set-background($dark-color);
+	}
+	&-danger {
+		@include set-background($danger-color);
+	}
+	&-success {
+		@include set-background($success-color);
+	}
+	&-white {
+		@include set-background(#fff);
+	}
+	&-border {
+		border: 2px $secondary-color solid;
+	}
+	&-income {
+		@include set-background(lighten($success-color, 5%));
+		opacity: 0.5;
+	}
+}
+
+//Buttons
+.btn {
+	display: inline-block;
+	background: $light-color;
+	color: #333;
+	padding: 0.4rem 1.3rem;
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-right: 0.5rem;
+	border-radius: 0.4rem;
+	opacity: 0.7;
+	transition: all 0.3s ease-in;
+
+	&.btn-primary {
+		@include set-background($primary-color);
+		&:hover {
+			background: lighten($primary-color, 10%);
+		}
+	}
+	&.btn-dark {
+		@include set-background($dark-color);
+		&:hover {
+			background: lighten($dark-color, 10%);
+		}
+	}
+	&.btn-secondary {
+		@include set-background($secondary-color);
+		&:hover {
+			background: lighten($secondary-color, 10%);
+		}
+	}
+	&.btn-secondary-2 {
+		@include set-background(lighten($secondary-color, 20%));
+		&:hover {
+			background: lighten($light-color, 10%);
+			color: $dark-color;
+		}
+	}
+	&.btn-light {
+		@include set-background($light-color);
+		&:hover {
+			background: lighten($light-color, 13%);
+			color: $dark-color;
+		}
+	}
+	&.btn-danger {
+		@include set-background($danger-color);
+		&:hover {
+			background: lighten($danger-color, 10%);
+		}
+	}
+	&.btn-success {
+		@include set-background($success-color);
+		&:hover {
+			background: lighten($success-color, 10%);
+		}
+	}
+
+	&:hover {
+		background: lighten($dark-color, 20%);
+		color: #fff;
+	}
+}
+
+//Badges
+.badge {
+	font-size: 0.7rem;
+	padding: 0.35rem;
+	text-align: center;
+	border-radius: 70%;
+	margin-left: 0.3rem;
+	background: $light-color;
+	color: #333;
+
+	&.badge-primary {
+		@include set-background($primary-color);
+	}
+	&.badge-dark {
+		@include set-background($dark-color);
+	}
+	&.badge-secondary {
+		@include set-background($secondary-color);
+	}
+	&.badge-success {
+		@include set-background($success-color);
+	}
+	&.badge-danger {
+		@include set-background($danger-color);
+	}
+}
+
+//Alerts
+.alert {
+	text-align: center;
+	padding: 0.5rem;
+	font-size: 1rem;
+	margin-bottom: 2.5rem;
+	opacity: 0.8;
+	background: $light-color;
+	color: #333;
+
+	&.alert-primary {
+		@include set-background($primary-color);
+	}
+	&.alert-secondary {
+		@include set-background($secondary-color);
+	}
+	&.alert-danger {
+		@include set-background($danger-color);
+	}
+	&.alert-success {
+		@include set-background($success-color);
+	}
+}
+
+//Tables
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	table-layout: fixed;
+
+	input[type='number'],
+	input[type='text'] {
+		border: none;
+		width: 100%;
+		font-size: 1rem;
+		text-align: center;
+		background: inherit;
+	}
+	select {
+		border: none;
+		background: inherit;
+		width: 70%;
+		font-size: 1rem;
+		text-align: center;
+		option {
+			text-align: center;
+		}
+	}
+
+	th,
+	td {
+		padding: 0.625em;
+		text-align: center;
+
+		&.paid {
+			color: $success-color;
+		}
+		&.debt {
+			color: $danger-color;
+		}
+	}
+
+	th {
+		background-color: lighten($primary-color, 10%);
+		color: #fff;
+		opacity: 0.65;
+
+		&.blank {
+			background: #e2e8ef;
+		}
+	}
+
+	tr:nth-child(odd) {
+		background-color: #f2f2f2;
+	}
+}
+
+.smaller-table {
+	table {
+		width: 70%;
+		margin: auto !important;
+		font-size: 1.4rem;
+
+		input {
+			font-size: 1.3rem;
+		}
+		select {
+			font-size: 1.2rem;
+			text-align-last: center;
+		}
+	}
+}
+
+//Tabs
+
+.ai-content__main {
+	a {
+		color: $primary-color;
+		opacity: 0.7;
+		cursor: pointer;
+		border-bottom: thin solid $secondary-color;
+		text-decoration: none;
+		@include easeOut;
+		padding-bottom: 4px;
+
+		&:hover {
+			text-decoration: none;
+			border-bottom: thin solid $secondary-color;
+			color: $dark-color;
+		}
+	}
+
+	.ai-content {
+		background: $secondary-color;
+		border-radius: 5px;
+		box-shadow: 0px 6px 14px 0px $light-color;
+		color: $primary-color;
+		position: relative;
+		margin: auto;
+		width: 400px;
+		padding: 16px;
+		padding-bottom: 72px;
+	}
+
+	.ai-madeby {
+		bottom: 0;
+		font-weight: 100;
+		margin-left: -16px;
+		text-align: center;
+		padding: 24px 0;
+		position: absolute;
+		width: 100%;
+	}
+
+	// Tabs
+	.ai-tabs {
+		&__tab-header {
+			margin-left: -16px;
+			margin-right: -16px;
+
+			ul {
+				list-style: none;
+				display: table;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+
+				li {
+					display: table-cell;
+					text-align: center;
+				}
+
+				li a {
+					display: block;
+					padding: 24px;
+					border-bottom: none;
+
+					&:hover {
+						background: $primary-color;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		&__line-container {
+			display: block;
+			height: 4px;
+			position: relative;
+			width: 100%;
+		}
+
+		&__line {
+			height: 2px;
+			background: $primary-color;
+			position: absolute;
+			width: auto;
+			@include easeOut;
+		}
+
+		&__content {
+			display: none;
+
+			&.ai-tabs__content--active {
+				display: block;
+			}
+		}
+	}
+}
+
+//Fancy Checkbox
+.option-input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	@include easeOut;
+	background: inherit;
+	border: none;
+	color: $dark-color;
+	cursor: pointer;
+	display: inline-block;
+	//margin-right: 0.5rem;
+	outline: none;
+	position: relative;
+	z-index: 1000;
+}
+.option-input:hover {
+	background: $light-color;
+}
+.option-input:checked {
+	opacity: 0.7;
+}
+.option-input:checked::before {
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	content: '✔';
+	display: inline-block;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 20px;
+	margin-left: 0.15rem;
+}
+
+//Slider
+.slider {
+	background-color: #333;
+	width: 100%;
+	margin-top: 3.3rem;
+	position: relative;
+	height: 550px;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	position: absolute;
+	top: -250px;
+	width: 100%;
+
+	&.img4 {
+		top: -350px;
+	}
+	&.img3 {
+		top: -200px;
+	}
+}
+
+@keyframes cambio {
+	0% {
+		margin-left: 0;
+	}
+	20% {
+		margin-left: 0;
+	}
+
+	25% {
+		margin-left: -100%;
+	}
+	45% {
+		margin-left: -100%;
+	}
+
+	50% {
+		margin-left: -200%;
+	}
+	70% {
+		margin-left: -200%;
+	}
+
+	75% {
+		margin-left: -300%;
+	}
+	100% {
+		margin-left: -300%;
+	}
+}
+
+.dark-overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}

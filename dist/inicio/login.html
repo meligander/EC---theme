@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Iniciar Sesión</title>
+		<link rel="stylesheet" href="../css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="index.html">
+				<div class="">
+					<img src="../img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">
+							<i class="fas fa-home"></i> &nbsp;
+							<span class="hide-md">Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">
+							<i class="fas fa-info-circle"></i> &nbsp;
+							<span class="hide-md">Acerca de Nosotros</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">
+							<i class="fas fa-address-book"></i> &nbsp;
+							<span class="hide-md">Contáctanos</span></a
+						>
+					</li>
+					<li class="nav-item current">
+						<a class="nav-link" href="login.html">
+							<i class="fas fa-sign-in-alt"></i> &nbsp;
+							<span class="hide-md">Iniciar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="small-screen">
+			<section class="login container">
+				<div class="bg-white p-4">
+					<!-- Alert -->
+					<div class="alert alert-danger">Credenciales Inválidas</div>
+
+					<h1 class="large text-primary">Iniciar Sesión</h1>
+					<p class="lead text-primary-2 my-1">
+						<i class="fas fa-user"></i> Inicie sesión en su cuenta
+					</p>
+					<form action="../dashboards/dashboardAlumno.html" class="form">
+						<div class="form-group">
+							<input
+								type="email"
+								name="email"
+								placeholder="Dirección de correo electrónico"
+							/>
+						</div>
+						<div class="form-group">
+							<input type="password" name="password" placeholder="Contraseña" />
+						</div>
+						<div class="add-item">
+							<input
+								type="submit"
+								value="Iniciar Sesión"
+								class="btn btn-primary"
+							/>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="../js/main.js"></script>
+	</body>
+</html>

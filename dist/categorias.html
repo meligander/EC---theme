@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Categorías y Precios</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboards/dashboardSecretaria.html">
+				<div class="">
+					<img src="img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Lilia</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="dashboardAlumno.html">Página Principal</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link current" href="about.html">Acerca de Nosotros</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contáctanos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html">
+							Cerrar Sesión <i class="fas fa-sign-out-alt"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<a href="dashboards/dashboardSecretaria.html" class="btn"
+				><i class="fas fa-chevron-left"></i> Volver</a
+			>
+			<div class="prices p-2 bg-white">
+				<h1 class="text-primary large text-dark p-1">Categorías y Precios</h1>
+
+				<div class="form">
+					<div class="form-group">
+						<input type="month" />
+						<small class="form-text"
+							>Seleccione el mes desde el cual correrá el aumento de
+							precio.</small
+						>
+					</div>
+				</div>
+				<div class="smaller-table">
+					<table>
+						<tr>
+							<th>Nombre</th>
+							<th>Valor</th>
+						</tr>
+						<tr>
+							<td>Inscripción</td>
+							<td><input type="number" value="2000" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>Kinder</td>
+							<td><input type="number" value="1500" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>Infantil C</td>
+							<td><input type="number" value="1700" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>Infantil B</td>
+							<td><input type="number" value="1800" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>Infantil A</td>
+							<td><input type="number" value="1900" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>Preparatorio</td>
+							<td><input type="number" value="2000" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>Junior</td>
+							<td><input type="number" value="2200" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>1° Año</td>
+							<td><input type="number" value="2400" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>2° Año</td>
+							<td><input type="number" value="2500" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>3° Año</td>
+							<td><input type="number" value="2700" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>4° Año</td>
+							<td><input type="number" value="2800" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>5° Año</td>
+							<td><input type="number" value="2900" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>6° Año</td>
+							<td><input type="number" value="3000" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>CAE</td>
+							<td><input type="number" value="3200" placeholder="Valor" /></td>
+						</tr>
+						<tr>
+							<td>Proficency</td>
+							<td><input type="number" value="3400" placeholder="Valor" /></td>
+						</tr>
+					</table>
+				</div>
+				<div class="add-item p-2">
+					<button type="submit" class="btn btn-primary">
+						<i class="fas fa-edit"></i> Actualizar Precios
+					</button>
+					<button class="btn btn-secondary">
+						<i class="far fa-save"></i>
+					</button>
+					<button class="btn btn-secondary">
+						<i class="fas fa-print"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				Villa de Merlo English Center Copyright &copy; 2020
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

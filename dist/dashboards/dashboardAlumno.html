@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Welcome Sofia</title>
+		<link rel="stylesheet" href="../css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboardAlumno.html">
+				<div class="">
+					<img src="../img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Sofia</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a class="nav-link current" href="dashboardAlumno.html">
+							<i class="fas fa-home"></i>
+							<span class="hide-md">&nbsp; Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../chat.html">
+							<i class="far fa-comments"></i>
+							<span class="hide-md">&nbsp; Posteo Grupal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../contactosAlumnos.html">
+							<i class="fas fa-address-book"></i
+							><span class="hide-md"> &nbsp; Compañeros</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../inicio/login.html">
+							<i class="fas fa-sign-out-alt"></i
+							><span class="hide-md"> &nbsp; Cerrar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<!-- Solo cuando ve otros perfiles -->
+			<a href="#!" class="btn"><i class="fas fa-chevron-left"></i> Volver</a>
+			<div class="profile-grid mt-1">
+				<!-- Top -->
+				<div class="profile-top bg-primary p-2">
+					<div class="img-about m-1">
+						<img
+							src="../img/uploads/teenage1.jpg"
+							alt="Perfil Alumno"
+							class="round-img p-1"
+						/>
+						<h1 class="large text-secondary my-1">Sofia Cuello</h1>
+						<p class="lead"><span class="text-dark">Legajo: </span>127</p>
+						<p class="lead text-dark">Usuario Activo</p>
+					</div>
+
+					<div class="about p-1">
+						<h2 class="lead">Info Alumno:</h2>
+						<p><span class="text-dark">DNI: </span>57.932.054</p>
+						<p>
+							<span class="text-dark">Email: </span>soficuello472@hotmail.com
+						</p>
+						<p><span class="text-dark">Celular: </span>(02664) 37-9385</p>
+						<p><span class="text-dark">Teléfono: </span>(02656) 478-920</p>
+						<p>
+							<span class="text-dark">Dirección: </span>Cnel Mercau 256, Centro,
+							Villa de Merlo
+						</p>
+						<p><span class="text-dark">Fecha de Nacimiento: </span>13/07/09</p>
+						<p>
+							<span class="text-dark">Lugar de Nacimiento: </span>Pilar, Buenos
+							Aires
+						</p>
+						<p><span class="text-dark">Sexo: </span> Femenino</p>
+
+						<!-- Solo para secretaria y admin -->
+						<p><span class="text-dark">Descuento: </span> 10%</p>
+						<p><span class="text-dark">Dia recargo: </span> 15</p>
+						<div class="add-item">
+							<button class="btn btn-danger">
+								<i class="fas fa-user-minus"></i>
+								<span class="hide-md">Eliminar Usuario</span>
+							</button>
+							<a href="../register.html" class="btn btn-light">
+								<i class="far fa-edit"></i> <span class="hide-md">Editar</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="tutors-bg bg-primary p-1">
+					<h2 class="lead text-dark">Tutores</h2>
+					<div class="tutors">
+						<div class="tutor">
+							<p class="m-1">Juan Esteban Cuello</p>
+							<a href="dashboardTutor.html">Ver Info</a>
+						</div>
+						<div class="tutor">
+							<p class="m-1">Andrea Gutierrez</p>
+							<a href="dashboardTutor.html">Ver Info</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Curso -->
+				<div class="class-info bg-white">
+					<div class="title">
+						<h2 class="large text-primary p-2">Curso</h2>
+						<h2 class="lead text-dark">Categoría: <small>2do Año</small></h2>
+					</div>
+					<div class="description bg-white">
+						<div class="teacher">
+							<p class="lead text-dark">
+								Profesor: <small>Claudia Lucero</small>
+							</p>
+							<a href="dashboardProfesor.html">Ver Info</a>
+						</div>
+
+						<p><span class="text-dark">Aula: </span>3</p>
+						<!-- Si horario de ambos dias es igual, juntar en uno solo -->
+						<p><span class="text-dark">Días: </span>Lunes y Miércoles</p>
+						<p><span class="text-dark">Horario: </span>3:30 - 5:00</p>
+					</div>
+				</div>
+
+				<!-- Notas - Depende de la categoria para hacer el tipo de notas-->
+				<div class="grades p-2">
+					<h1 class="text-primary p-1">Notas</h1>
+					<table class="rtable rtable--flip">
+						<thead>
+							<tr>
+								<th class="blank">&nbsp;</th>
+								<th>1° Bimestre</th>
+								<th>2° Bimestre</th>
+								<th>3° Bimestre</th>
+								<th>4° Bimestre</th>
+								<th>Final</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Escrito</th>
+								<td>8</td>
+								<td>9</td>
+								<td>8.50</td>
+								<td>7.50</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<th>Oral</th>
+								<td>7</td>
+								<td>7.50</td>
+								<td>8.50</td>
+								<td>6.50</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<th>Tests</th>
+								<td>9</td>
+								<td>8.50</td>
+								<td>8</td>
+								<td>9.5</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Inasistencias -->
+				<div class="attendance bg-white p-2">
+					<h1 class="text-primary p-1">
+						Inasistencias <span class="badge badge-secondary"> 3 </span>
+					</h1>
+					<div class="absence">
+						<div class="p-1"><i class="far fa-times-circle"></i> 13/4</div>
+						<div class="p-1"><i class="far fa-times-circle"></i> 6/7</div>
+						<div class="p-1"><i class="far fa-times-circle"></i> 18/9</div>
+					</div>
+				</div>
+
+				<div class="debts p-2">
+					<h1 class="text-primary p-1">Pagos</h1>
+					<table>
+						<tr>
+							<th>Insc</th>
+							<th>Mar</th>
+							<th>Abr</th>
+							<th>May</th>
+							<th>Jun</th>
+							<th>Jul</th>
+							<th>Agto</th>
+							<th>Sept</th>
+							<th>Oct</th>
+							<th>Nov</th>
+							<th>Dic</th>
+						</tr>
+						<tr>
+							<td class="paid">PAGADO</td>
+							<td class="paid">PAGADO</td>
+							<td class="paid">PAGADO</td>
+							<td class="paid">PAGADO</td>
+							<td class="paid">PAGADO</td>
+							<td class="debt">1550</td>
+							<td>1400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="../js/main.js"></script>
+	</body>
+</html>

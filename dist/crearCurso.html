@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Crear Curso</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboards/dashboardSecretaria.html">
+				<div class="">
+					<img src="img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Lilia</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="dashboardAlumno.html">Página Principal</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link current" href="about.html">Acerca de Nosotros</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contáctanos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html">
+							Cerrar Sesión <i class="fas fa-sign-out-alt"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<a href="cursos.html" class="btn"
+				><i class="fas fa-chevron-left"></i> Volver</a
+			>
+			<div class="new-class p-2 my-1 bg-white">
+				<h1 class="text-primary x-large text-dark p-1">Curso Nuevo</h1>
+				<div class="info-class m-2">
+					<form class="form">
+						<div class="form-group">
+							<select>
+								<option value="0">* Seleccione Profesor</option>
+								<option value="Lilia Anderlini">Lilia Anderlini</option>
+								<option value="Karina del Valle">Karina del Valle</option>
+								<option value="Claudia Lucero">Claudia Lucero</option>
+								<option value="Emiliano Funes">Emiliano Funes</option>
+								<option value="Mauricio Bolaño">Mauricio Bolaño</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<select>
+								<option value="0">* Seleccione Categoría</option>
+								<option value="Kinder">Kinder</option>
+								<option value="Infantil C">Infantil C</option>
+								<option value="Infantil B">Infantil B</option>
+								<option value="Infantil A">Infantil A</option>
+								<option value="Preparatorio">Preparatorio</option>
+								<option value="Junior">Junior</option>
+								<option value="1° Año">1° Año</option>
+								<option value="2° Año">2° Año</option>
+								<option value="3° Año">3° Año</option>
+								<option value="4° Año">4° Año</option>
+								<option value="5° Año">5° Año</option>
+								<option value="6° Año">6° Año</option>
+								<option value="CAE">CAE</option>
+								<option value="Proficency">Proficency</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="number" placeholder="Aula" />
+						</div>
+						<div class="form-group">
+							<select>
+								<option value="0">* Seleccione Día 1</option>
+								<option value="Lunes">Lunes</option>
+								<option value="Martes">Martes</option>
+								<option value="Miércoles">Miércoles</option>
+								<option value="Jueves">Jueves</option>
+								<option value="Viernes">Viernes</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="time" min="08:00" max="22:00" />
+							<small class="form-text">Ingrese el horario de entrada</small>
+						</div>
+						<div class="form-group">
+							<input type="time" min="08:00" max="22:00" />
+							<small class="form-text">Ingrese el horario de salida</small>
+						</div>
+						<div class="form-group">
+							<select>
+								<option value="0">* Seleccione Día 2</option>
+								<option value="Lunes">Lunes</option>
+								<option value="Martes">Martes</option>
+								<option value="Miércoles">Miércoles</option>
+								<option value="Jueves">Jueves</option>
+								<option value="Viernes">Viernes</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="time" min="08:00" max="22:00" />
+							<small class="form-text">Ingrese el horario de entrada</small>
+						</div>
+						<div class="form-group">
+							<input type="time" min="08:00" max="22:00" />
+							<small class="form-text">Ingrese el horario de salida</small>
+						</div>
+						<div class="filter-btn">
+							<button class="btn btn-primary my-1">Filtrar Alumnos</button>
+						</div>
+					</form>
+				</div>
+
+				<section class="ai-content__main">
+					<div class="ai-content__content">
+						<div class="ai-tabs">
+							<nav class="ai-tabs__tab-header">
+								<ul>
+									<li>
+										<a href="#one" class="ai-tabs__link ai-tabs--active"
+											>Posibles alumnos</a
+										>
+									</li>
+									<li>
+										<a href="#two" class="ai-tabs__link"
+											>Alumnos Seleccionados</a
+										>
+									</li>
+								</ul>
+								<div class="ai-tabs__line-container">
+									<div class="ai-tabs__line"></div>
+								</div>
+							</nav>
+							<div class="ai-tabs__content-container">
+								<div class="ai-tabs__content" id="one">
+									<div class="mt-1">
+										<table>
+											<tr>
+												<th>Nombre</th>
+												<th>Legajo</th>
+												<th>Edad</th>
+												<th>Celular</th>
+												<th>&nbsp;</th>
+												<th>&nbsp;</th>
+											</tr>
+											<tr>
+												<td>Sofía Cuello</td>
+												<td>127</td>
+												<td>12</td>
+												<td>(2664) 87-9470</td>
+												<td>
+													<a
+														href="dashboards/dashboardAlumno.html"
+														class="btn btn-light"
+														>Ver</a
+													>
+												</td>
+												<td>
+													<button class="btn btn-secondary">Seleccionar</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Benjamín Fernandez</td>
+												<td>264</td>
+												<td>13</td>
+												<td>(2664) 87-9470</td>
+												<td>
+													<a
+														href="dashboards/dashboardAlumno.html"
+														class="btn btn-light"
+														>Ver</a
+													>
+												</td>
+												<td>
+													<button class="btn btn-secondary">Seleccionar</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Julián Gonzalez</td>
+												<td>130</td>
+												<td>11</td>
+												<td>(2664) 87-9470</td>
+												<td>
+													<a
+														href="dashboards/dashboardAlumno.html"
+														class="btn btn-light"
+														>Ver</a
+													>
+												</td>
+												<td>
+													<button class="btn btn-secondary">Seleccionar</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Estefanía Lopez</td>
+												<td>111</td>
+												<td>12</td>
+												<td>(2664) 87-9470</td>
+												<td>
+													<a
+														href="dashboards/dashboardAlumno.html"
+														class="btn btn-light"
+														>Ver</a
+													>
+												</td>
+												<td>
+													<button class="btn btn-secondary">Seleccionar</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Milagros Gutierrez</td>
+												<td>102</td>
+												<td>13</td>
+												<td>(2664) 87-9470</td>
+												<td>
+													<a
+														href="dashboards/dashboardAlumno.html"
+														class="btn btn-light"
+														>Ver</a
+													>
+												</td>
+												<td>
+													<button class="btn btn-secondary">Seleccionar</button>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="ai-tabs__content" id="two">
+									<div class="mt-1">
+										<table>
+											<tr>
+												<th>Nombre</th>
+												<th>Legajo</th>
+												<th>Edad</th>
+												<th>Celular</th>
+												<th>&nbsp;</th>
+												<th>&nbsp;</th>
+											</tr>
+											<tr>
+												<td>Antonio Funes</td>
+												<td>129</td>
+												<td>11</td>
+												<td>(2664) 87-9470</td>
+												<td>
+													<a
+														href="dashboards/dashboardAlumno.html"
+														class="btn btn-light"
+														>Ver</a
+													>
+												</td>
+												<td>
+													<button class="btn btn-secondary">Quitar</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Julieta Mazadi</td>
+												<td>276</td>
+												<td>12</td>
+												<td>(2664) 87-9470</td>
+												<td>
+													<a
+														href="dashboards/dashboardAlumno.html"
+														class="btn btn-light"
+														>Ver</a
+													>
+												</td>
+												<td>
+													<button class="btn btn-secondary">Quitar</button>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="buttons">
+					<input class="btn btn-primary" type="submit" value="Registrar" />
+					<a href="cursos.html" class="btn btn-light">Volver</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				Villa de Merlo English Center Copyright &copy; 2020
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+		<script src="js/tabs.js"></script>
+	</body>
+</html>

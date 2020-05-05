@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Caja</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboards/dashboardSecretaria.html">
+				<div class="">
+					<img src="img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Magali</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link current"
+							href="dashboards/dashboardSecretaria.html"
+						>
+							<i class="fas fa-home"></i>
+							<span class="hide-md">&nbsp; Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link current" href="busquedas.html">
+							<i class="fas fa-search"
+								><span class="hide-md">&nbsp; Búsqueda</span></i
+							>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cursos.html">
+							<i class="fas fa-chalkboard"></i
+							><span class="hide-md">&nbsp; Cursos</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inscripcion.html">
+							<i class="fas fa-user-edit"></i
+							><span class="hide-md">&nbsp; Inscripción</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="facturacion.html">
+							<i class="fas fa-hand-holding-usd"></i
+							><span class="hide-md">&nbsp; Facturación</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="caja.html">
+							<i class="fas fa-cash-register"></i
+							><span class="hide-md">&nbsp; Caja</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inicio/login.html">
+							<i class="fas fa-sign-out-alt"></i
+							><span class="hide-md"> &nbsp; Cerrar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<a href="dashboards/dashboardSecretaria.html" class="btn"
+				><i class="fas fa-chevron-left"></i> Volver</a
+			>
+			<div class="register p-4 bg-white mt-1">
+				<h1 class="x-large text-dark text-center p-1 text">Caja</h1>
+				<h2 class="lead text-dark">
+					<i class="fas fa-calendar-day"></i> Jueves, 24 de abril
+				</h2>
+				<section class="ai-content__main">
+					<div class="ai-content__content">
+						<div class="ai-tabs">
+							<nav class="ai-tabs__tab-header">
+								<ul>
+									<li>
+										<a href="#one" class="ai-tabs__link ai-tabs--active"
+											>Caja Diaria</a
+										>
+									</li>
+									<li>
+										<a href="#two" class="ai-tabs__link">Ingreso/Egreso</a>
+									</li>
+								</ul>
+								<div class="ai-tabs__line-container">
+									<div class="ai-tabs__line"></div>
+								</div>
+							</nav>
+							<div class="ai-tabs__content-container">
+								<div class="ai-tabs__content mt-2" id="one">
+									<table>
+										<tr>
+											<td class="lead text-dark">Total Ingresos</td>
+											<td>$17000</td>
+											<td>
+												<a
+													class="btn btn-light"
+													href="listados/listadoIngresos.html"
+													>Ver Listado</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td class="lead text-dark">Total Egresos</td>
+											<td>$3500</td>
+											<td>
+												<a
+													class="btn btn-light"
+													href="listados/listadoEgresos.html"
+													>Ver Listado</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td class="lead text-dark">Plata Caja</td>
+											<td>$15800</td>
+											<td>
+												<a
+													href="listados/listadoCaja.html"
+													class="btn btn-light"
+													>Ver Cierres</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<td class="lead text-dark">Diferencia</td>
+											<td><input type="number" placeholder="Diferencia" /></td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="lead text-dark">Detalles</td>
+											<td>
+												<textarea cols="30" rows="3"></textarea>
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+									</table>
+
+									<div class="buttons mt-2">
+										<button type="submit" class="btn btn-primary">
+											<i class="far fa-save"></i
+											><span class="hide-sm"> Guardar</span>
+										</button>
+									</div>
+								</div>
+								<div class="ai-tabs__content mt-2" id="two">
+									<div class="form">
+										<div class="form-group">
+											<p class="lead text-dark">
+												Dinero en Caja
+											</p>
+											<input
+												type="text"
+												name=""
+												value="$15800"
+												disabled
+												id=""
+											/>
+										</div>
+										<div class="form-group">
+											<p class="lead text-dark">
+												Tipo de Gasto
+											</p>
+											<select id="select">
+												<option value="0"
+													>* Seleccione el Tipo de Gasto o Ingreso</option
+												>
+												<option value="Ingreso Especial"
+													>Ingreso Especial</option
+												>
+												<option value="Profesor">Pago a Profesores</option>
+												<option value="Gas">Gas</option>
+											</select>
+										</div>
+										<!-- Solo si es pago a profesores -->
+										<div class="form-group">
+											<p class="lead text-dark">
+												Horas
+											</p>
+											<input type="number" placeholder="Horas" name="" id="" />
+										</div>
+										<div class="form-group">
+											<p class="lead text-dark">
+												Importe
+											</p>
+											<input
+												type="number"
+												placeholder="Importe"
+												name=""
+												id=""
+											/>
+										</div>
+										<div class="form-group">
+											<p class="lead text-dark">
+												Descripción
+											</p>
+											<textarea
+												placeholder="Descripción"
+												name=""
+												id="descripcion"
+											></textarea>
+										</div>
+										<div class="buttons mt-3">
+											<button type="submit" class="btn btn-primary">
+												<i class="far fa-save"></i
+												><span class="hide-sm"> Guardar</span>
+											</button>
+											<!-- Solo para Admin -->
+											<a href="editarTipoGasto.html" class="btn btn-secondary">
+												<i class="fas fa-edit"></i>
+												<span class="hide-sm"> Tipo Gasto</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+		<script src="js/tabs.js"></script>
+	</body>
+</html>

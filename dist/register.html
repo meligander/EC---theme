@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nuevo Registro</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboards/dashboardSecretaria.html">
+				<div class="">
+					<img src="img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Magali</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link current"
+							href="dashboards/dashboardSecretaria.html"
+						>
+							<i class="fas fa-home"></i>
+							<span class="hide-md">&nbsp; Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link current" href="busquedas.html">
+							<i class="fas fa-search"
+								><span class="hide-md">&nbsp; Búsqueda</span></i
+							>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cursos.html">
+							<i class="fas fa-chalkboard"></i
+							><span class="hide-md">&nbsp; Cursos</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inscripcion.html">
+							<i class="fas fa-user-edit"></i
+							><span class="hide-md">&nbsp; Inscripción</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="facturacion.html">
+							<i class="fas fa-hand-holding-usd"></i
+							><span class="hide-md">&nbsp; Facturación</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="caja.html">
+							<i class="fas fa-cash-register"></i
+							><span class="hide-md">&nbsp; Caja</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inicio/login.html">
+							<i class="fas fa-sign-out-alt"></i
+							><span class="hide-md"> &nbsp; Cerrar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<a href="busquedas.html" class="btn"
+				><i class="fas fa-chevron-left"></i> Volver</a
+			>
+			<div class="register-user p-4 bg-white mt-1">
+				<!-- Alert -->
+				<div class="alert alert-danger">El correo electrónico es necesario</div>
+
+				<h1 class="large text-primary">Registrar Nuevo Usuario</h1>
+				<p class="lead text-primary-2 my-1">
+					<i class="fas fa-user"></i> Cree una cuenta para el nuevo usuario
+				</p>
+				<form action="dashboards/dashboardSecretaria.html" class="form">
+					<!-- Tratar de cambiar de color cuando se suba la foto con React -->
+					<div class="upl-img">
+						<div class="fileUpload add-item">
+							<input type="file" class="upload" />
+							<span> <i class="fa fa-cloud-upload"></i> Subir imágen</span>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="text" name="Name" placeholder="Nombre" />
+					</div>
+					<div class="form-group">
+						<input type="text" name="Lastname" placeholder="Apellido" />
+					</div>
+					<div class="form-group">
+						<input
+							type="email"
+							name="email"
+							placeholder="Dirección de correo electrónico"
+						/>
+					</div>
+					<div class="form-group">
+						<input type="text" name="tel" placeholder="Teléfono" />
+					</div>
+					<div class="form-group">
+						<input type="text" name="cel" placeholder="Celular" />
+					</div>
+					<div class="form-group">
+						<select>
+							<option value="0">* Seleccione el tipo de usuario</option>
+							<option value="Alumno">Alumno</option>
+							<option value="Padre">Padre</option>
+							<option value="Profesor">Profesor</option>
+							<option value="Secretaria">Secretaria</option>
+							<option value="Administrador">Administrador</option>
+						</select>
+						<small class="form-text"
+							>Seleccione el tipo de usuario que desea registrar</small
+						>
+					</div>
+					<div class="form-group">
+						<input type="number" name="legajo" placeholder="legajo" disabled />
+					</div>
+					<div class="form-group">
+						<input type="number" name="ID" placeholder="DNI" />
+					</div>
+					<div class="edit">
+						<div class="form-group">
+							<select>
+								<option value="0">* Seleccione localidad donde vive</option>
+								<option value="Merlo">Merlo</option>
+								<option value="Carpintería">Carpintería</option>
+								<option value="Los Molles">Los Molles</option>
+								<option value="La Paz">La Paz</option>
+								<option value="Santa Rosa">Santa Rosa</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<select>
+								<option value="0">* Seleccione barrio donde vive</option>
+								<option value="Nuevo Merlo">Nuevo Merlo</option>
+								<option value="Centro">Centro</option>
+								<option value="Los Nogales">Los Nogales</option>
+								<option value="Rincon del Este">Rincón del Este</option>
+								<option value="Piedra Blanca Abajo"
+									>Priedra Blanca Abajo</option
+								>
+							</select>
+						</div>
+						<div class="add-item">
+							<a href="edicion/editarLocBari.html" class="btn"
+								><i class="far fa-edit"></i> Editar</a
+							>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="text" name="address" placeholder="Dirección" />
+					</div>
+					<div class="form-group">
+						<input type="date" name="bornDay" />
+						<small class="form-text">Fecha de Nacimiento</small>
+					</div>
+					<div class="form-group">
+						<select name="discount">
+							<option>* Seleccione el tipo de descuento</option>
+							<option value="0">0%</option>
+							<option value="5">5%</option>
+							<option value="10">10%</option>
+							<option value="15">15%</option>
+							<option value="50">50% o Media Beca</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select name="charge">
+							<option>* Seleccione día de recargo</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+						<small class="form-text"
+							>Seleccione el dia del mes en que se aplica el recargo a la
+							cuota</small
+						>
+					</div>
+					<div class="form-group">
+						<input
+							type="text"
+							name="localidadNacimiento"
+							placeholder="Localidad de Nacimiento"
+						/>
+					</div>
+					<div class="form-group">
+						<select>
+							<option value="0">* Seleccione Provincia de Nacimiento</option>
+							<option value="Buenos Aires">Buenos Aires</option>
+							<option value="Catamarca">Catamarca</option>
+							<option value="Córdoba">Córdoba</option>
+							<option value="Corrientes">Corrientes</option>
+							<option value="Chaco">Chaco</option>
+							<option value="Chubut">Chubut</option>
+							<option value="Entre Ríos">Entre Ríos</option>
+							<option value="Formosa">Formosa</option>
+							<option value="Jujuy">Jujuy</option>
+							<option value="La Pampa">La Pampa</option>
+							<option value="La Rioja">La Rioja</option>
+							<option value="Mendoza">Mendoza</option>
+							<option value="Misiones">Misiones</option>
+							<option value="Neuquén">Neuquén</option>
+							<option value="Río Negro">Río Negro</option>
+							<option value="Salta">Salta</option>
+							<option value="San Juan">San Juan</option>
+							<option value="San Luis">San Luis</option>
+							<option value="Santa Cruz">Santa Cruz</option>
+							<option value="Santa Fe">Santa Fe</option>
+							<option value="Santiago del Estero">Santiago del Estero</option>
+							<option value="Tierra del Fuego">Tierra del Fuego</option>
+							<option value="Tucumán">Tucumán</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<div class="group">
+							<input type="radio" checked name="rb" id="rbf" />
+							<label for="rbf">Femenino</label>
+							<input type="radio" name="rb" id="rbm" />
+							<label for="rbm">Masculino</label>
+						</div>
+						<small class="form-text">Seleccion el sexo</small>
+					</div>
+					<div class="form-group">
+						<input type="text" name="title" placeholder="Titulo" />
+					</div>
+					<div class="form-group">
+						<input type="text" name="school" placeholder="Institución" />
+						<small class="form-text">Institución donde se graduó</small>
+					</div>
+					<div class="form-group">
+						<input type="number" name="salary" placeholder="Salario" />
+					</div>
+					<div class="form-group">
+						<textarea
+							name="description"
+							rows="4"
+							placeholder="Descripción"
+						></textarea>
+					</div>
+					<div class="form-group">
+						<input type="checkbox" checked name="cb" id="cb1" />
+						<label id="check" for="cb1">Activo</label>
+					</div>
+					<div class="form-group">
+						<h3 class="hijos-titulo">Hijos</h3>
+						<div class="hijo">
+							<!-- Alert -->
+							<div class="alert alert-danger">
+								No se encontró un alumno con esos datos
+							</div>
+							<div class="form-group">
+								<input type="number" name="legajoh1" placeholder="Legajo" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="name1" placeholder="Nombre" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="lastname1" placeholder="Apellido" />
+							</div>
+							<div class="add-item">
+								<button class="btn btn-secondary">
+									<i class="far fa-check-circle"></i>
+									<span class="hide-md">Aceptar</span>
+								</button>
+								<button class="btn btn-secondary">
+									<i class="fas fa-ban"></i>
+									<span class="hide-md">Cancelar</span>
+								</button>
+								<button class="btn">
+									<i class="fas fa-user-plus"></i>
+									<span class="hide-md">Agregar Otro</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<input type="submit" value="Registrar" class="btn btn-primary" />
+				</form>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,708 @@
+@import 'config';
+@import 'menu';
+@import 'form';
+@import 'utilities';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+body {
+	font-family: 'Dancing Script', cursive;
+	font-family: 'Courgette', cursive;
+	font-size: 1rem;
+	line-height: 1.6;
+	background-color: $background-color;
+	color: #333;
+}
+
+button,
+input[type='submit'] {
+	line-height: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: 'Dancing Script', cursive;
+	font-family: 'Courgette', cursive;
+}
+
+img {
+	width: 100%;
+}
+
+.add-item {
+	margin-top: 2rem;
+	text-align: end;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	button {
+		border: none;
+		background: inherit;
+		color: $primary-color;
+	}
+}
+
+.text-right {
+	text-align: end;
+}
+
+.text-center {
+	text-align: center;
+}
+
+//Navbar
+
+nav img {
+	margin-top: 0.4rem;
+	width: 45px;
+	height: auto;
+	filter: none;
+	-webkit-filter: invert(100%);
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0rem 1.5rem;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+	opacity: 0.9;
+
+	a {
+		display: flex;
+		.title {
+			color: #fff;
+			padding: 0.5rem 1rem;
+			align-self: flex-start;
+			font-size: 1.5rem;
+			font-family: 'Dancing Script', cursive;
+		}
+	}
+
+	h3 {
+		margin-right: 2rem;
+	}
+}
+
+//Landing
+.landing {
+	position: relative;
+	background: url(../img/portada.jpg) no-repeat 0 -200px;
+	background-position: center;
+	background-size: 100%;
+	height: 100vh;
+	width: 100%;
+
+	&-inner {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 80%;
+
+		.main-text {
+			color: $secondary-color;
+			margin-top: 5rem;
+			padding-top: 0.5rem;
+
+			h1 {
+				font-family: 'Dancing Script', cursive;
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+}
+
+//About
+#about-us {
+	position: relative;
+	background: url(../img/portada.jpg) no-repeat center center/cover;
+
+	.overlay {
+		height: 400px;
+		background-color: rgba(0, 0, 0, 0.8);
+		z-index: -2;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		margin: auto;
+		width: 80%;
+
+		.main {
+			margin-top: 7rem;
+
+			h2 {
+				line-height: 3rem;
+			}
+			p {
+				color: #fff;
+			}
+		}
+	}
+}
+
+//History
+#history {
+	.img-left img {
+		width: 350px;
+		height: auto;
+		margin: 1.5rem;
+		margin-left: 0;
+		border: 3px $dark-color solid;
+		border-radius: 50%;
+	}
+	.text-right {
+		margin: 0 0 0 2rem;
+	}
+}
+
+//Canada
+#canada {
+	.text-left {
+		margin-right: 2rem;
+	}
+	.img-slider {
+		margin: 1rem;
+
+		img {
+			width: 450px;
+			border: 2px $light-color solid;
+		}
+	}
+}
+
+//Cambridge
+#cambridge {
+	.container {
+		margin: 0;
+		background: #fff;
+
+		.row {
+			justify-content: space-between;
+			padding: 3rem 0.5rem;
+
+			img {
+				width: 400px;
+				margin: 2rem;
+			}
+		}
+	}
+}
+
+//Team
+#team {
+	.container {
+		margin: 0;
+		background: #fff;
+		.row {
+			padding: 1rem;
+			justify-content: space-around;
+			.titulo {
+				width: 45%;
+				h1 {
+					line-height: 4rem;
+					text-align: center;
+				}
+
+				button {
+					font-size: 3rem;
+				}
+			}
+
+			.team {
+				width: 55%;
+				border: 3px $dark-color solid;
+				padding: 1.4rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: center;
+				align-items: center;
+
+				img {
+					max-width: 200px;
+					margin: 0.5rem;
+				}
+			}
+		}
+	}
+}
+
+//Contacto
+#contact {
+	h1 {
+		margin: 5rem 0 0 2rem;
+	}
+	.container {
+		margin: 0;
+
+		.contactos {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: space-evenly;
+			align-items: center;
+
+			.info {
+				margin: 0 0 1.5rem 2rem;
+				border: 3px $dark-color solid;
+				padding: 1.5rem;
+				@include easeOut;
+
+				&:hover {
+					background: $secondary-color;
+					color: #fff;
+					padding: 0.5rem;
+				}
+			}
+		}
+	}
+}
+
+.teacher {
+	margin-bottom: 1rem;
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: $secondary-color;
+		width: 35%;
+		@include easeOut;
+		&:hover {
+			font-size: 1.5rem;
+			color: $light-color;
+		}
+	}
+}
+
+//Profile Page
+.profile-grid {
+	.profile-top {
+		display: flex;
+
+		.img-about {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: auto !important;
+			text-align: center;
+			width: 45%;
+
+			h1 {
+				font-weight: 100;
+			}
+
+			img {
+				width: 300px;
+				height: 300px;
+				object-fit: cover;
+			}
+		}
+
+		.about {
+			width: 55%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			//align-items: center;
+			text-align: left;
+			span.text-dark {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	.grades {
+		background-color: lighten($background-color, 5%);
+	}
+
+	.debts {
+		background-color: lighten($background-color, 5%);
+	}
+
+	.class-info {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		background-color: lighten($background-color, 10%);
+		.title {
+			width: 40%;
+			padding: 1rem;
+			text-align: center;
+			h2 {
+				padding: 1.5rem;
+				font-weight: 150;
+				margin-bottom: 0;
+
+				&.lead {
+					padding: 1rem;
+				}
+			}
+		}
+		.description {
+			text-align: center;
+			padding: 2rem;
+			margin-bottom: 0;
+			width: 60%;
+		}
+	}
+
+	.attendance {
+		span {
+			font-size: 1.2rem;
+		}
+		.absence {
+			display: flex;
+			flex-wrap: wrap;
+			text-align: center;
+		}
+	}
+
+	.tutors-bg {
+		opacity: 0.9;
+
+		h2 {
+			margin-bottom: 0;
+			text-align: center;
+		}
+		.tutors {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+
+		.tutor {
+			padding: 0.4rem;
+
+			p {
+				display: inline-block;
+			}
+
+			a {
+				text-decoration: none;
+				color: $dark-color;
+				@include easeOut;
+				&:hover {
+					font-size: 1.5rem;
+					color: $secondary-color;
+				}
+			}
+		}
+	}
+
+	.register-info {
+		.money {
+			text-align: center;
+		}
+	}
+}
+
+.profile-class {
+	h1 {
+		font-weight: 100;
+	}
+}
+
+//Cursos
+.filter {
+	width: 70%;
+	margin-bottom: 2rem;
+	border: 1px $secondary-color solid;
+	padding: 1rem;
+	.form-group {
+		margin: 1rem 0;
+	}
+}
+
+.class {
+	margin-top: 1rem;
+	h1 {
+		text-align: center;
+		font-weight: 100;
+	}
+	.info-class {
+		.lead {
+			margin: 0;
+		}
+		.days {
+			display: flex;
+			justify-content: space-around;
+			text-align: center;
+			margin-top: 2rem;
+			.schedule {
+				display: inline-flex;
+
+				p {
+					margin-left: 1rem;
+				}
+			}
+		}
+	}
+
+	.buttons {
+		margin-top: 1.3rem;
+	}
+}
+
+.new-class {
+	.filter-btn {
+		text-align: end;
+	}
+	.buttons {
+		justify-content: center;
+		margin-top: 2rem;
+
+		input {
+			margin-right: 2rem;
+		}
+	}
+}
+
+//Notas
+.class {
+	.class-grades {
+		margin-bottom: 2rem;
+		.b-2 {
+			opacity: 0.4;
+		}
+	}
+
+	.add-grade {
+		text-align: end;
+		display: flex;
+		button {
+			font-size: 2rem;
+		}
+	}
+	.form {
+		width: 30%;
+		text-align: end;
+
+		select,
+		input[type='date'] {
+			font-size: 1rem;
+			padding: 0.4rem;
+			text-align: center;
+			text-align-last: center;
+		}
+
+		input[type='submit'] {
+			margin-top: 1rem;
+		}
+	}
+}
+
+//Factura
+.invoice {
+	.form {
+		width: 90%;
+	}
+	.invoice-details {
+		text-align: end;
+		label {
+			font-size: 1.5rem;
+			margin-right: 1rem;
+		}
+
+		input {
+			font-size: 1.3rem;
+			//border: none;
+			text-align: center;
+			background: inherit;
+		}
+	}
+	.btn-primary {
+		font-size: 1.3rem;
+	}
+}
+
+//Caja
+.register {
+	h1 {
+		font-weight: 100;
+	}
+	table {
+		width: 70%;
+		margin: 0 auto;
+		//border: 1px $secondary-color dotted;
+		td a {
+			border-bottom: none;
+			&:hover {
+				border-bottom: none;
+			}
+		}
+
+		textarea {
+			border: none;
+			background: inherit;
+			text-align: end;
+		}
+	}
+	.form {
+		width: 67%;
+		.form-group {
+			padding: 0.7em 0.7em 0.7em 1.5em;
+			margin: 10px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.lead {
+				margin-bottom: 0;
+			}
+
+			#select,
+			#descripcion {
+				width: 60%;
+			}
+
+			input,
+			select,
+			textarea {
+				border: none;
+				width: 40%;
+				background: inherit;
+				text-align: right;
+				font-size: 1rem;
+			}
+
+			&:nth-child(odd) {
+				background-color: #f2f2f2;
+			}
+		}
+	}
+}
+
+//Listado Inscripcion
+
+.expence-list {
+	.form {
+		width: 60%;
+		.form-group {
+			margin: 1rem 0;
+		}
+	}
+}
+
+.filter-info {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	//text-align: center;
+	height: 80px;
+
+	select,
+	input[type='date'] {
+		width: 200px;
+		text-align: end;
+	}
+
+	select {
+		text-align-last: center;
+	}
+
+	input[type='text'] {
+		width: 350px;
+	}
+}
+
+//Precios categorias
+.prices {
+	.form {
+		width: 50%;
+
+		input,
+		small {
+			text-align: center;
+		}
+	}
+}
+
+//Chat
+.chat {
+	.form {
+		width: 100%;
+	}
+
+	.post-form-header {
+		padding: 0.5rem;
+	}
+
+	.post {
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+		grid-gap: 2rem;
+		align-items: center;
+
+		& > div:first-child {
+			text-align: center;
+			img {
+				width: 150px;
+				height: 150px;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+.search {
+	table.small {
+		margin: auto;
+		position: relative;
+		border-collapse: collapse;
+		overflow-x: auto;
+		display: block;
+		width: fit-content;
+		max-width: 100%;
+
+		th {
+			width: 40px !important;
+		}
+
+		td:first-of-type,
+		th:first-of-type {
+			border-left: none;
+		}
+
+		td:last-of-type,
+		th:last-of-type {
+			border-right: none;
+		}
+	}
+}
+
+//edicion
+.neighbourhood {
+	table {
+		margin: auto;
+	}
+}
+
+@import 'mobile';

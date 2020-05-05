@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Facturación</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="dashboards/dashboardSecretaria.html">
+				<div class="">
+					<img src="img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Magali</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link current"
+							href="dashboards/dashboardSecretaria.html"
+						>
+							<i class="fas fa-home"></i>
+							<span class="hide-md">&nbsp; Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link current" href="busquedas.html">
+							<i class="fas fa-search"
+								><span class="hide-md">&nbsp; Búsqueda</span></i
+							>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cursos.html">
+							<i class="fas fa-chalkboard"></i
+							><span class="hide-md">&nbsp; Cursos</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inscripcion.html">
+							<i class="fas fa-user-edit"></i
+							><span class="hide-md">&nbsp; Inscripción</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="facturacion.html">
+							<i class="fas fa-hand-holding-usd"></i
+							><span class="hide-md">&nbsp; Facturación</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="caja.html">
+							<i class="fas fa-cash-register"></i
+							><span class="hide-md">&nbsp; Caja</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="inicio/login.html">
+							<i class="fas fa-sign-out-alt"></i
+							><span class="hide-md"> &nbsp; Cerrar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<a href="dashboards/dashboardSecretaria.html" class="btn"
+				><i class="fas fa-chevron-left"></i> Volver</a
+			>
+			<div class="payment p-3 bg-white mt-1">
+				<h1 class="text-primary large text-dark p-1">Facturación</h1>
+				<section class="ai-content__main">
+					<div class="ai-content__content">
+						<div class="ai-tabs">
+							<nav class="ai-tabs__tab-header">
+								<ul>
+									<li>
+										<a href="#one" class="ai-tabs__link ai-tabs--active"
+											>Cuotas</a
+										>
+									</li>
+									<li>
+										<a href="#two" class="ai-tabs__link">Factura</a>
+									</li>
+								</ul>
+								<div class="ai-tabs__line-container">
+									<div class="ai-tabs__line"></div>
+								</div>
+							</nav>
+							<div class="ai-tabs__content-container">
+								<div class="ai-tabs__content" id="one">
+									<div class="form">
+										<div class="form-group">
+											<h2 class="hijos-titulo text-primary">Alumno</h2>
+											<div class="hijo">
+												<!-- Alert -->
+												<div class="alert alert-danger">
+													No se encontró un alumno con esos datos
+												</div>
+												<div class="form-group">
+													<input
+														type="number"
+														name="legajo"
+														placeholder="Legajo"
+													/>
+												</div>
+												<div class="form-group">
+													<input type="text" name="name" placeholder="Nombre" />
+												</div>
+												<div class="form-group">
+													<input
+														type="text"
+														name="lastname"
+														placeholder="Apellido"
+													/>
+												</div>
+												<div class="add-item">
+													<button class="btn btn-secondary">
+														<i class="far fa-check-circle"></i>
+														<span class="hide-sm">Aceptar</span>
+													</button>
+													<button class="btn btn-secondary">
+														<i class="fas fa-ban"></i>
+														<span class="hide-sm">Cancelar</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="debts">
+										<h1 class="text-primary p-1">Cuotas del Alumno</h1>
+										<!-- Cuando seleccione que cambie el color de fondo al primario -->
+										<table>
+											<tr>
+												<th>Insc</th>
+												<th>Mar</th>
+												<th>Abr</th>
+												<th>May</th>
+												<th>Jun</th>
+												<th>Jul</th>
+												<th>Agto</th>
+												<th>Sept</th>
+												<th>Oct</th>
+												<th>Nov</th>
+												<th>Dic</th>
+											</tr>
+											<tr>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="debt">1650</td>
+											</tr>
+											<tr>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="paid">PAGADO</td>
+												<td class="debt">1550</td>
+												<td>1400</td>
+												<td>1400</td>
+												<td>1400</td>
+												<td>1400</td>
+												<td>1400</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="ai-tabs__content" id="two">
+								<div class="invoice bg-white">
+									<div class="form">
+										<div class="hijo my-2">
+											<div class="form-group">
+												<input
+													type="number"
+													name="id-factura"
+													value="134097820837"
+													disabled
+												/>
+												<small class="form-text">Factura ID</small>
+											</div>
+											<div class="form-group">
+												<input
+													type="date"
+													name="id-factura"
+													value="2020-04-28"
+													disabled
+												/>
+												<small class="form-text">Fecha</small>
+											</div>
+											<div class="form-group">
+												<!-- Alert -->
+												<!-- <div class="alert alert-danger">
+													No se encontró un usuario con esos datos
+												</div> -->
+												<div class="form-group">
+													<input type="text" name="name" placeholder="Nombre" />
+												</div>
+												<div class="form-group">
+													<input
+														type="text"
+														name="lastname"
+														placeholder="Apellido"
+													/>
+												</div>
+												<div class="form-group">
+													<input
+														type="email"
+														name="email"
+														placeholder="Email"
+													/>
+												</div>
+												<div class="add-item">
+													<button class="btn btn-secondary">
+														<i class="far fa-check-circle"></i>
+														<span class="hide-sm">Aceptar</span>
+													</button>
+													<button class="btn btn-secondary">
+														<i class="fas fa-ban"></i>
+														<span class="hide-sm">Cancelar</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h1 class="text-primary lead">Detalle de Factura</h1>
+									<table>
+										<tr>
+											<th>Nombre</th>
+											<th>Legajo</th>
+											<th>Cuota</th>
+											<th>Importe</th>
+											<th>A Pagar</th>
+											<th>Saldo</th>
+											<th>&nbsp;</th>
+										</tr>
+										<tr>
+											<td>Julián Cuello</td>
+											<td>109</td>
+											<td>Dic</td>
+											<td>1750</td>
+											<td>
+												<input type="number" placeholder="Valor" value="1750" />
+											</td>
+											<td>0</td>
+											<td>
+												<button class="btn btn-secondary-2">Quitar</button>
+											</td>
+										</tr>
+										<tr>
+											<td>Sofia Cuello</td>
+											<td>127</td>
+											<td>Dic</td>
+											<td>1650</td>
+											<td>
+												<input type="number" placeholder="Valor" value="1650" />
+											</td>
+											<td>0</td>
+											<td>
+												<button class="btn btn-secondary-2">Quitar</button>
+											</td>
+										</tr>
+										<tr>
+											<td>Sofia Cuello</td>
+											<td>127</td>
+											<td>Jul</td>
+											<td>1550</td>
+											<td>
+												<input type="number" placeholder="Valor" value="1000" />
+											</td>
+											<td>550</td>
+											<td>
+												<button class="btn btn-secondary-2">Quitar</button>
+											</td>
+										</tr>
+									</table>
+									<div class="invoice-details my-2">
+										<div class="remaining">
+											<label for="remaining">Saldo</label>
+											<input
+												type="number"
+												value="550"
+												disabled
+												name="remaining"
+											/>
+										</div>
+										<div class="total">
+											<label for="total">Total a Pagar</label>
+											<input type="number" value="3400" disabled name="total" />
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary">
+										<i class="fas fa-file-invoice-dollar"></i> Pagar
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+		<script src="js/tabs.js"></script>
+	</body>
+</html>

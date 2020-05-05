@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Listado Inscripciones</title>
+		<link rel="stylesheet" href="../css/style.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/07b17aaea9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<a href="../dashboards/dashboardSecretaria.html">
+				<div class="">
+					<img src="../img/logo.png" alt="Logo English Center" />
+				</div>
+				<div class="title hide-sm">
+					Villa de Merlo English Center
+				</div>
+			</a>
+			<h3>Welcome Magali</h3>
+
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+			<div class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+					<div class="address">
+						<h3>Villa de Merlo English Center</h3>
+						<p>Villa De Merlo - San Luis</p>
+						<p>Argentina</p>
+					</div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link current"
+							href="../dashboards/dashboardSecretaria.html"
+						>
+							<i class="fas fa-home"></i>
+							<span class="hide-md">&nbsp; Página Principal</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link current" href="../busquedas.html">
+							<i class="fas fa-search"
+								><span class="hide-md">&nbsp; Búsqueda</span></i
+							>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../cursos.html">
+							<i class="fas fa-chalkboard"></i
+							><span class="hide-md">&nbsp; Cursos</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../inscripcion.html">
+							<i class="fas fa-user-edit"></i
+							><span class="hide-md">&nbsp; Inscripción</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../facturacion.html">
+							<i class="fas fa-hand-holding-usd"></i
+							><span class="hide-md">&nbsp; Facturación</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../caja.html">
+							<i class="fas fa-cash-register"></i
+							><span class="hide-md">&nbsp; Caja</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../inicio/login.html">
+							<i class="fas fa-sign-out-alt"></i
+							><span class="hide-md"> &nbsp; Cerrar Sesión</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="small-screen">
+			<section class="container">
+				<a href="../inscripcion.html" class="btn"
+					><i class="fas fa-chevron-left"></i> Volver</a
+				>
+				<div class="enrollment-list p-2 bg-white mt-1">
+					<h1 class="text-primary large text-dark p-1">
+						Listado Inscripciones
+					</h1>
+					<form class="form">
+						<div class="filter-info">
+							<div class="form-group">
+								<input type="date" name="" id="" />
+								<small class="form-text date"
+									>Ingrese desde que fecha desea ver</small
+								>
+							</div>
+							<div class="form-group">
+								<input type="date" name="" id="" />
+								<small class="form-text date"
+									>Ingrese hasta que fecha desea ver</small
+								>
+							</div>
+						</div>
+						<div class="filter-info">
+							<div class="form-group">
+								<select>
+									<option value="0">* Seleccione Categoría</option>
+									<option value="Kinder">Kinder</option>
+									<option value="Infantil C">Infantil C</option>
+									<option value="Infantil B">Infantil B</option>
+									<option value="Infantil A">Infantil A</option>
+									<option value="Preparatorio">Preparatorio</option>
+									<option value="Junior">Junior</option>
+									<option value="1° Año">1° Año</option>
+									<option value="2° Año">2° Año</option>
+									<option value="3° Año">3° Año</option>
+									<option value="4° Año">4° Año</option>
+									<option value="5° Año">5° Año</option>
+									<option value="6° Año">6° Año</option>
+									<option value="CAE">CAE</option>
+									<option value="Proficency">Proficency</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select>
+									<option value="0">* Seleccione el año</option>
+									<option value="2020">2019</option>
+									<option value="2020">2020</option>
+									<option value="2021">2021</option>
+								</select>
+							</div>
+						</div>
+						<div class="add-item mb-1">
+							<button type="submit" class="btn btn-light">
+								<i class="fas fa-filter"></i> Buscar
+							</button>
+						</div>
+					</form>
+
+					<table>
+						<tr>
+							<th>Fecha</th>
+							<th>Legajo</th>
+							<th>Nombre</th>
+							<th>Categoría</th>
+							<th>Año</th>
+							<th>&nbsp;</th>
+						</tr>
+						<tr>
+							<td>13/10/20</td>
+							<td>134</td>
+							<td>Juan Godoy</td>
+							<td>Infantil C</td>
+							<td>2021</td>
+							<td>
+								<button class="btn btn-danger">
+									<i class="far fa-trash-alt"></i>
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>15/10/20</td>
+							<td>122</td>
+							<td>Alejo Nizman</td>
+							<td>3° Año</td>
+							<td>2021</td>
+							<td>
+								<button class="btn btn-danger">
+									<i class="far fa-trash-alt"></i>
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>18/10/20</td>
+							<td>97</td>
+							<td>Melania Molinari</td>
+							<td>CAE</td>
+							<td>2021</td>
+							<td>
+								<button class="btn btn-danger">
+									<i class="far fa-trash-alt"></i>
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>19/10/20</td>
+							<td>208</td>
+							<td>Ciro Ledesma</td>
+							<td>Kinder</td>
+							<td>2021</td>
+							<td>
+								<button class="btn btn-danger">
+									<i class="far fa-trash-alt"></i>
+								</button>
+							</td>
+						</tr>
+					</table>
+					<div class="add-item">
+						<button class="btn btn-secondary">
+							<i class="far fa-save"></i>
+						</button>
+						<button class="btn btn-secondary">
+							<i class="fas fa-print"></i>
+						</button>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="bg-primary">
+			<p>
+				<span class="hide-sm">Villa de Merlo</span> English Center Copyright
+				&copy; 2020
+			</p>
+		</footer>
+
+		<script src="../js/main.js"></script>
+	</body>
+</html>
